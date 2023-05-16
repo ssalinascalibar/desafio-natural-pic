@@ -1,0 +1,20 @@
+  
+  .grid-columns-4 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  /* Tablet */
+  @media screen and (min-width: 576px) {
+    .grid-columns-4 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+  }
+  
+  /* Desktop */
+  @media screen and (min-width: 992px) {
+    .grid-columns-4 {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  
+  }

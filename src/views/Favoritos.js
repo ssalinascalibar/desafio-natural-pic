@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import Context from '../Context';
 
+import  "../assets/css/favoritos.css"
+
 export default function Favoritos() {
   const {fotos, setFotos} = useContext(Context);
 
