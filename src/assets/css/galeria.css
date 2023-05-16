@@ -1,54 +1,67 @@
 .galeria {
-    display: grid;
-    gap: 10px;
-    
+  display: grid;
+  gap: 10px;
+}
+
+.grid-columns-5 {
+  grid-template-columns: repeat(1, 1fr);
+}
+.grid-columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.galeria .foto {
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: left;
+  text-shadow: 0px 0px 15px black;
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  width: 70%;
+  padding-left: 1rem;
+}
+
+.galeria .foto:hover {
+  box-shadow: 0px 0px 2px 1px black;
+}
+
+.galeria .foto svg {
+  align-self: flex-end;
+  position: absolute;
+}
+
+.p-3 {
+  padding: 30px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Tablet */
+@media screen and (min-width: 576px) {
+  .grid-columns-5 {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
+
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
   .grid-columns-5 {
     grid-template-columns: repeat(5, 1fr);
   }
-  .grid-columns-4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  
-  .galeria .foto {
-    cursor: pointer;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: left;
-    text-shadow: 0px 0px 15px black;
-    position: relative;
-  }
-  
 
-  .text{
-    position: absolute;
-    width: 70%;
-  }
-  
-  .galeria .foto:hover {
-    box-shadow: 0px 0px 2px 1px black;
-  }
-  
-  .galeria .foto svg {
-    align-self: flex-end;
-    position: absolute;
-  }
-  
-  .p-3 {
-    padding: 30px;
-  }
-  
-  img {
-    height: 100%;
-    width: 100%;
-  }
-  
-  
+}
